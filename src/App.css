@@ -1,38 +1,86 @@
+body {
+  background: #e4fefa;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
 .App {
+  padding: 50px;
+}
+.main-wrapper {
+  text-align: left;
+  padding: 50px;
+  padding-top: 25px;
+  width: 800px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 80vh;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-screen {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-center {
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #1e6f93;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
+  background: #00497b;
+  color: #fff;
+  padding: 16px 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 50px;
+  font-weight: 600;
+}
+.question {
+  color: #1e6f93;
+}
+.answer-option {
+  display: block;
+  width: 100%;
+  background: #fff;
+  color: #548aa3;
+  text-align: left;
+  padding: 20px 0px 20px 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.answer-text {
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 600;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answer-option .count {
+  font-size: 14px;
+  background: #00497b;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 30px;
+  margin-right: 20px;
+  border-radius: 30px;
+  text-align: center;
+}
+.answer-option.correct {
+  background: #05d5fb;
+  color: #fff;
+}
+.answer-option.incorrectAnswer {
+  opacity: 0.5;
 }
